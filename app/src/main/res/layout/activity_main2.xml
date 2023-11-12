@@ -6,44 +6,51 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
+        app:layout_constraintVertical_bias="0.138"
+        app:srcCompat="@drawable/bd"
+        tools:ignore="MissingConstraints" />
+
+    <include
+        android:id="@+id/my_toolbar"
+        layout="@layout/my_toolbar" />
+
     <TextView
-        android:id="@+id/tvBuscar"
-        android:layout_width="162dp"
-        android:layout_height="57dp"
-        android:text=""
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.087" />
-
-    <EditText
-        android:id="@+id/etBuscar"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Buscar Libro"
-        android:inputType="text"
+        android:fontFamily="sans-serif-medium"
+        android:text="IMPORTANCIA Y BENEFICIOS DE LA LECTURA"
+        android:textColor="#3F51B5"
+        android:gravity="center"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.544"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvBuscar"
-        app:layout_constraintVertical_bias="0.342"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.09" />
 
-    <Button
-        android:id="@+id/btBuscar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Buscar"
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="401dp"
+        android:layout_height="214dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="La lectura es un hábito de comunicación que permite desarrollar los pensamientos cognitivos e interactivos de cualquier lector, el leer permite construir con facilidad nuevos conocimientos. Ayuda al desarrollo y perfeccionamiento del lenguaje. Mejora la expresión oral y escrita y hace el lenguaje más fluido. Da la facilidad para exponer el propio pensamiento y posibilita la capacidad de pensar. Potencia la capacidad de observación, de atención y de concentración. "
+        android:textColor="#3F51B5"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etBuscar"
-        app:layout_constraintVertical_bias="0.305"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:ignore="MissingConstraints" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
