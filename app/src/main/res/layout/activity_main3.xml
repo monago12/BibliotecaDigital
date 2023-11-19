@@ -26,15 +26,16 @@
         android:id="@+id/etBuscar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="56dp"
         android:ems="10"
         android:hint="Buscar Libro"
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvBuscar"
-        app:layout_constraintVertical_bias="0.069"
+        app:layout_constraintVertical_bias="0.02"
         tools:ignore="MissingConstraints" />
+
 
     <Button
         android:id="@+id/btBuscar"
@@ -43,11 +44,23 @@
         android:text="Buscar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintHorizontal_bias="0.519"
         app:layout_constraintStart_toEndOf="@+id/etBuscar"
         app:layout_constraintTop_toBottomOf="@+id/tvBuscar"
-        app:layout_constraintVertical_bias="0.069"
+        app:layout_constraintVertical_bias="0.018"
         tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/miRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="236dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
 
     <include
         android:id="@+id/my_toolbar"
