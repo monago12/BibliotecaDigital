@@ -49,8 +49,8 @@ public class MainActivity3 extends AppCompatActivity {
         miRecyclerView.setAdapter(miAdaptador);*/
 
         //TEXTO DE ARRIBA
-        TextView tvDescargar = findViewById(R.id.tvBuscar);
-        tvDescargar.setText("ESTAS ESTAS EN LA SECCION DE BUSCAR");
+        TextView tvBuscar = findViewById(R.id.tvBuscar);
+        tvBuscar.setText("ESTAS ESTAS EN LA SECCION DE BUSCAR");
 
 
         //PARA VINCULAR EL TOOLBAR
@@ -78,6 +78,9 @@ public class MainActivity3 extends AppCompatActivity {
                 return true;
             case "Descargar":
                 startActivity(new Intent(this, MainActivity4.class));
+                return true;
+            case "Inicio":
+                startActivity(new Intent(this, MainActivity2.class));
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

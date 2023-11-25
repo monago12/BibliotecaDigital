@@ -46,6 +46,9 @@ public class MainActivity2 extends AppCompatActivity {
             case "Descargar":
                 startActivity(new Intent(this, MainActivity4.class));
                 return true;
+            case "Inicio":
+                startActivity(new Intent(this, MainActivity2.class));
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
